@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GoogleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $weather_location = 'japan';
+    $weather_location = 'Ikire';
     $weather_apikey = config('services.weatherapi.key');
 
 
@@ -27,3 +28,5 @@ Route::get('/', function () {
 
     return view('welcome', ['weatherReport' =>  $westher_today->json()]);
 });
+
+Route::get('auto-complete', [GoogleController::class, 'index']);

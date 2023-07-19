@@ -50,7 +50,7 @@ class AuthController extends Controller
         $user = Auth::user();
 
         $authtoken = $user->createToken('authtoken')->plainTextToken;
-        $authcookie = cookie('weather_jwt', $authtoken, 60 * 12); // expires in 12 hours
+        $authcookie = cookie('weather_jwt', $authtoken, 60 * 48); // expires in 12 hours
 
         return response([
             'message' => $authtoken
