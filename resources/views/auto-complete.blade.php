@@ -62,11 +62,12 @@ $("#long_area").removeClass("d-none");
 });
 
 
+
 }
 
 function myweatherapi() {
+alert(autocomplete.getPlace());
 
-  location.replace("/")
 }
 </script>
 </body>

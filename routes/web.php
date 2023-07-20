@@ -17,7 +17,7 @@ use App\Http\Controllers\GoogleController;
 
 Route::get('/', function () {
 
-    $weather_location = 'Ikire';
+    $weather_location = 'London';
     $weather_apikey = config('services.weatherapi.key');
 
 

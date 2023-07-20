@@ -10,7 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
 
     @vite('resources/css/app.css')
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyD86_XmucSzPwyxOZmVJqEP9d3M14BSW08&libraries=places"></script>
 </head>
 
 <body class="min-h-screen bg-blue-200 bg-gradient-to-tr from-blue-200 to-blue-400">
