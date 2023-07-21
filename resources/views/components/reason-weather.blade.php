@@ -6,16 +6,16 @@
 
 </form>
 
-    <script type="text/javascript">
+   <script type="text/javascript">
 
-        $(document).ready(function(){
+     //   $(document).ready(function(){
 
-            var autocomplete;
-            var id = 'location';
-            autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)),{})
+      //      var autocomplete;
+        //    var id = 'location';
+        //    autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)),{})
 
 
-            });
+       //     });
 
     </script>
 
@@ -33,7 +33,7 @@
                             <div class="text-grey-400 mt-2">Feels like {{ $weatherReport['main']['feels_like'] }}&#176;C</div>
                         </div>
                         <div class="ml-10">
-                            <div class="font-semibold text-lime-500">{{strtoupper(\carbon\carbon::createfromtimestamp($weatherReport['dt'])->format('D, F d Y')) }}</div>
+                            <div class="font-semibold text-lime-300 text-sm">{{strtoupper(\carbon\carbon::createfromtimestamp($weatherReport['dt'])->format('D, F d Y')) }}</div>
                             <div class="font-semibold">{{ ucfirst($weatherReport['weather'][0]['description']) }}</div>
                             <div class="text-2xl text-amber-600 text-grey-400">{{ $weatherReport['name']}}, {{ $weatherReport['sys']['country']}} </div>
                         </div>
